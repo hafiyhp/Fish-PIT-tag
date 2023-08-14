@@ -6,12 +6,9 @@ library(openxlsx)
 combined_data2 <- read.csv("Combined_data3FINAL.csv")
 View(combined_data2)
 
-# Its better to work on this source editor ((PIT_tag_(2)) side by side with PIT_tag_(1)_redo
-#..for COMPARISON
-
 # Filter fish exclusively detected at Blackwater, 
 #...those that did not appeared at all three Avochies
-#...turn duplicates into count (?)
+#...narrow duplicates into an actual count of individual salmon with unique ID
 
 blackwater_1_fish <- combined_data2 %>% filter(site == "Blackwater")
 View(blackwater_1_fish)
